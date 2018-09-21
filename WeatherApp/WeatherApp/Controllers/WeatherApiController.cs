@@ -16,9 +16,10 @@ namespace WeatherApp.Controllers
     public class WeatherApiController : Controller
     {
         // GET: /<controller>/
-        public IActionResult Weather()
+        [HttpGet]
+        public IActionResult WeatherByCity()
         {
-                        
+             
 
             return View();
         }

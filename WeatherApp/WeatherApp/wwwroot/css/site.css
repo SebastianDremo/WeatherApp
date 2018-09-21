@@ -3,6 +3,10 @@ for details on configuring this project to bundle and minify static web assets. 
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('../images/index-view-picture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* Wrapping element */
@@ -35,3 +39,19 @@ body {
         display: none;
     }
 }
+
+#main-form  {
+    margin-top: 30%;
+    margin-bottom: 30%;
+    padding: 3%;
+    border: 2px white;
+    border-radius: 10px;
+    /*text-align:center;*/
+}
+
+#main-form > form > p {
+    text-align: center;
+    color: white;
+    font-size:x-large;
+}
+
