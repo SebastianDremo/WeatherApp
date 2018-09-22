@@ -3,7 +3,8 @@
     <div class="row">
         <div class="col"></div>
         <div class="col-8" id="main-form">
-            <form asp-action="WeatherByCity" method="post" id="WeatherForm">
+            <!--Remember that asp-controller doesn't need 'Controller' in a name of controller :( -->
+            <form asp-controller="WeatherApi" asp-action="WeatherByCity" method="post" id="WeatherForm">
                 <p>
                     <label asp-for="Name">City: </label>
                     <input asp-for="Name" />
