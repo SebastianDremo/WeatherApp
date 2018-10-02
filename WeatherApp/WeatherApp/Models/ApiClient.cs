@@ -15,7 +15,7 @@ namespace WeatherApp.Models
             using(var client = new HttpClient())
             {                
                     client.BaseAddress = new Uri("http://api.openweathermap.org");
-                    var response = await client.GetAsync($"http://api.openweathermap.org/data/2.5/weather?q={cityName}&APIID=9a5a6f66668c6b8861c56d58d5b5d4e3");
+                    var response = await client.GetAsync($"/data/2.5/weather?q={cityName}&appid=43212c8e45c6c7f65998bf7a5a51f03d");
                     response.EnsureSuccessStatusCode();
 
                     var stringResult =await response.Content.ReadAsStringAsync();

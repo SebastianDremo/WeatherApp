@@ -11,7 +11,7 @@ namespace WeatherApp.Models
         public int id { get; set; }
         public double message { get; set; }
         public string country { get; set; }
-        public int sunrise { get; set; }
-        public int sunset { get; set; }
+        public float sunrise { get; set; }
+        public float sunset { get; set; }
     }
 }

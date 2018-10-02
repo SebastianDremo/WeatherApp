@@ -17,7 +17,7 @@ namespace WeatherApp.Controllers
 
             var weatherObj = apiClient.GetCity(city.Name);
 
-            var x= weatherObj.Result.main.temp;
+            
 
             return View(weatherObj.Result);
         }
