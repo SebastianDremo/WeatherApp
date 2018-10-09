@@ -2,7 +2,6 @@
 for details on configuring this project to bundle and minify static web assets. */
 body {
     padding-top: 50px;
-    padding-bottom: 20px;
     background-image: url('../images/index-view-picture.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,30 +13,6 @@ body {
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
-}
-
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
-}
-
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
-    width: 100%;
-}
-
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
 }
 
 #main-form {
@@ -58,4 +33,20 @@ body {
     color: black;
 }
 
+.myNavbar{
+   text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#plz {
+    text-decoration: none;
+    color: white;
+}
+
+#plz:hover{
+    text-decoration: none;
+}
 
