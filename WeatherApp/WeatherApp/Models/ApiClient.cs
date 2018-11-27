@@ -15,12 +15,12 @@ namespace WeatherApp.Models
             using(var client = new HttpClient())
             {                
                     client.BaseAddress = new Uri("http://api.openweathermap.org");
-                    var response = await client.GetAsync($"/data/2.5/weather?q={cityName}&appid=43212c8e45c6c7f65998bf7a5a51f03d");
+                    var response = await client.GetAsync($"/data/2.5/weather?q={cityName}&appid=cd7bcb53240a0ad4f16e97abefa6d8e6");
                     response.EnsureSuccessStatusCode();
 
                     var stringResult =await response.Content.ReadAsStringAsync();
                     
-                    var weather = JsonConvert.DeserializeObject<WeatherApiModel>(stringResult);
+                    var weather = JsonConvert.DeserializeObject<WeatherApiModel>(stringResult);      
                     
                     return weather;              
             }

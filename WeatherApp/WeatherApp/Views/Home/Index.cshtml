@@ -1,23 +1,15 @@
 ﻿@model WeatherApp.Models.City
 
-@{ 
-    Layout = "_Layout";
-}
 
-<div class="container">
-    
-    <div class="row">
-        <div class="col"></div>
-        <div class="col-8" id="main-form">
-            <!--Remember that asp-controller doesn't need 'Controller' in a name of controller :( -->
-            <form asp-controller="WeatherApi" asp-action="WeatherByCity" method="post" id="WeatherForm">
+<div class="d-flex justify-content-center align-items-center">            
+        <div>
+            <!--Remember that asp-controller doesn't need 'Controller' in a name of controller :( -->        
+            <form asp-controller="WeatherApi" asp-action="WeatherByCity" method="post" style="margin:20%" class="form-inline">
                 <p>
-                    <label asp-for="Name">City: </label>
+                    <label asp-for="Name">City:</label>
                     <input asp-for="Name" />
                 </p>
-                <button type="submit">OK</button>
+                <button class="btn-primary" type="submit">OK</button>
             </form>
-        </div>
-        <div class="col"></div>
-    </div>
+        </div> 
 </div>

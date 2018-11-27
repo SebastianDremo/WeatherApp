@@ -1,7 +1,28 @@
-﻿@model WeatherApp.Models.WeatherApiModel
-@{ 
-    Layout = null;
+﻿@model WeatherApiModel
+
+@{
+    Layout=null;
 }
-
-
-@Model.main.temp
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/WeatherApiModel.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-image"></div>
+    <div class="container">
+        <div class="item">
+            <div class="item-bg"></div>
+            <p>Lorem Ipsum</p>
+        </div>
+        <div class="item">
+            <div class="item-bg"></div>
+            <span class="item-title"><p>@Model.name</p></span>
+        </div>
+        <div class="item">
+            <div class="item-bg"></div>
+            <p>Lorem Ipsum</p>
+        </div>
+    </div>
+</body>

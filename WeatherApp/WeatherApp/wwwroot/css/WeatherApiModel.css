@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg-image{
+    position: absolute;
+    background-image: url("../images/air-atmosphere-blue-314726.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-filter: blur(5px);
+     -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.container{
+    position: absolute;
+    height: 100%;  
+    width: 100%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item{
+    width: 25%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.item-bg{
+    border-radius: 15px;
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    background-color: grey;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.item-title{
+    font-size: 2rem;
+}
