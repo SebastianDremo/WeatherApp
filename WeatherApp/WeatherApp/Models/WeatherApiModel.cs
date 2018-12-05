@@ -18,6 +18,14 @@ namespace WeatherApp.Models
             public Sys sys { get; set; }
             public int id { get; set; }
             public string name { get; set; }
-            public float cod { get; set; }       
+            public float cod { get; set; }     
+
+            public DateTime UnixTimeStampToDateTime( double unixTimeStamp )
+            {
+                // Unix timestamp is seconds past epoch
+                System.DateTime dtDateTime = new DateTime(1970,1,1,0,0,0,0,System.DateTimeKind.Utc);
+                dtDateTime = dtDateTime.AddSeconds( unixTimeStamp ).ToLocalTime();
+                return dtDateTime;
+            }
     }
 }

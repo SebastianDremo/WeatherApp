@@ -2,6 +2,14 @@
 
 @{
     Layout=null;
+
+    double _temp = System.Math.Round(Model.main.temp - 273.15); //converting Kelvins to Celsius and rounding this double  
+
+    DateTime _sunrise = Model.UnixTimeStampToDateTime(Model.sys.sunrise);
+    DateTime _sunset = Model.UnixTimeStampToDateTime(Model.sys.sunset);
+
+    _sunrise.AddHours(1);
+    _sunset.AddHours(1);
 }
 <head>
     <meta charset="utf-8" />
@@ -14,11 +22,16 @@
     <div class="container">
         <div class="item">
             <div class="item-bg"></div>
-            <p>Lorem Ipsum</p>
+            <p>Lorem Ipsum</p> 
         </div>
         <div class="item">
-            <div class="item-bg"></div>
+            <div class="item-bg"></div>    
             <span class="item-title"><p>@Model.name</p></span>
+            <div class="item-cels">@_temp &#x2103; </div>
+            <div class="item-low">
+                <p class="item-low-sun"><span class="item-low-sun-type">Sunrise:</span> @_sunrise.Hour : @_sunrise.Minute  CET</p>
+                <p class="item-low-sun"><span class="item-low-sun-type">Sunset:</span> @_sunset.Hour : @_sunset.Minute CET</p>
+            </div>
         </div>
         <div class="item">
             <div class="item-bg"></div>

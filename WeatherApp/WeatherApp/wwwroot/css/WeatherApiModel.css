@@ -32,7 +32,10 @@ body{
     width: 25%;
     height: 50%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     font-size: 1.5rem;
 }
 
@@ -46,6 +49,30 @@ body{
     z-index: -1;
 }
 
+.item-cels{
+    font-size: 1.8rem;
+}
+
 .item-title{
     font-size: 2rem;
+}
+
+.item-low{
+    width: 90%;
+    margin-top: 2rem;
+    border-top: 1px solid;
+    border-top-color: #676767;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item-low-sun{
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.item-low-sun-type{
+    margin-right: 1rem;
 }

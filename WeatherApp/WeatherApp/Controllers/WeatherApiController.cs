@@ -13,9 +13,7 @@ namespace WeatherApp.Controllers
         {
             ApiClient apiClient = new ApiClient();
 
-            var weatherObj = apiClient.GetCity(city.Name);
-
-            
+            var weatherObj = apiClient.GetCity(city.Name);            
 
             return View(weatherObj.Result);
         }
